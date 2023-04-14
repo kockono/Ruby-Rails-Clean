@@ -17,7 +17,7 @@ end
 Rails utiliza el patrón Modelo-Vista-Controlador (MVC), que separa la lógica de negocio de la presentación y el control. Sigue este patrón para que tu código sea más modular y escalable.
 
 **Por ejemplo**, si tienes una aplicación que muestra una lista de productos en una página, la vista mostrará los productos, el controlador manejará la lógica de negocio y el modelo manejará la interacción con la base de datos:
-````rb
+```rb
 # app/models/product.rb
 class Product < ApplicationRecord
   # código para interactuar con la base de datos
@@ -39,6 +39,7 @@ end
   <% end %>
 </ul>
 ```
+
 ## Usa migraciones para manejar la base de datos
 Las migraciones son archivos de Ruby que describen cómo la base de datos debe cambiar para satisfacer tus necesidades. Usa migraciones para modificar la base de datos en lugar de hacer cambios directamente en la base de datos.
 
@@ -54,7 +55,7 @@ end
 Usa scopes para encapsular la lógica de consulta
 Usa scopes para encapsular la lógica de consulta en tu modelo. Los scopes son métodos de clase que te permiten definir consultas comunes que se pueden utilizar en diferentes partes de tu aplicación.
 
-Por ejemplo, si tienes un modelo Post y quieres recuperar todos los posts que fueron publicados hace menos de una semana, puedes crear un scope con el siguiente código:
+**Ejemplo:** si tienes un modelo Post y quieres recuperar todos los posts que fueron publicados hace menos de una semana, puedes crear un scope con el siguiente código:
 ```rb
 class Post < ApplicationRecord
   scope :recent, -> { where('created_at >= ?', 1.week.ago) }
