@@ -1,7 +1,7 @@
 # Ruby & Rails 7.0.3 
 
 * [Principio de convencion](#sigue)
-* [Patron MVC](#modelo-vista-controlador)
+* [Patron MVC](#Patrón-Modelo-Vista-Controlador-(MVC))
 
 
 ## Sigue el principio de convención sobre configuración (CoC)
