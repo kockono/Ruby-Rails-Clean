@@ -1,5 +1,9 @@
 # Ruby & Rails 7.0.3 
+
 * [Principio de convencion](#sigue)
+* [Patron MVC](#modelo-vista-controlador)
+
+
 ## Sigue el principio de convención sobre configuración (CoC)
 Rails sigue el principio de convención sobre configuración, lo que significa que proporciona una estructura y convenciones predeterminadas para tus aplicaciones. Sigue estas convenciones para que tu código sea más fácil de entender y mantener.
 
